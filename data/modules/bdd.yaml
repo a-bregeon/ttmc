@@ -31,7 +31,7 @@ questions:
       ✅ **Vrai !** On peut mettre les informations à jour, par exemple après un déménagement.
 
   - question: |
-      Vrai ou Faux : `GROUP BY` permet de regrouper des lignes afin d'effectuer des calculs par groupe.
+      Que calcule cette requête ?
 
       ```sql
       SELECT team, AVG(score)
@@ -39,7 +39,7 @@ questions:
       GROUP BY team;
       ```
     answer: |
-      ✅ **Vrai !** Ici, les joueurs sont regroupés par équipe et `AVG(score)` calcule le score moyen de chacune.
+      **Le score moyen de chaque équipe !** `GROUP BY` regroupe les joueurs par équipe et `AVG(score)` calcule le score moyen de chacune.
 
   - question: |
       Vrai ou Faux : Une procédure stockée est un ensemble d'instructions enregistré dans la base de données et pouvant être exécuté à la demande.

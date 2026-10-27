@@ -41,23 +41,25 @@ questions:
       ✅ **Vrai !** `cherry-pick` permet d'appliquer les modifications introduites par un commit spécifique.
 
   - question: |
-      Vrai ou Faux : Après cette commande, le dernier commit disparaît de `main` et les modifications correspondantes sont également supprimées du répertoire de travail.
+      Tu es sur `main`. Après cette commande, où sont passées les modifications du dernier commit ?
 
       ```bash
       git reset --soft HEAD~1
       ```
     answer: |
-      ❌ **Faux !** `--soft` déplace `HEAD` mais conserve les modifications dans la zone de staging.
+      **Toujours là, dans la zone de staging !** `--soft` fait reculer `main` d'un commit, mais garde les modifications, prêtes à être commitées à nouveau.
 
   - question: |
-      👾 **BOSS FINAL — Vrai ou Faux :**
+      👾 **BOSS FINAL :**
 
-      Après avoir checkouté directement un commit avec :
+      Tu checkoutes directement un commit, puis tu crées un nouveau commit sans créer de branche :
 
       ```bash
       git checkout a1b2c3d
+      git commit -am "Mon super commit"
+      git checkout main
       ```
 
-      puis créé un nouveau commit sans créer de branche, ce nouveau commit appartient automatiquement à `main`.
+      Que devient « Mon super commit » ?
     answer: |
-      ❌ **Faux !** On se trouve en `detached HEAD` : le nouveau commit n'est pas automatiquement rattaché à `main`.
+      **Il n'appartient à aucune branche !** On était en `detached HEAD` : le commit n'a été rattaché ni à `main` ni à une autre branche. En revenant sur `main`, on le laisse derrière, et Git le supprimera un jour. On peut encore le retrouver avec `git reflog` et lui créer une branche.

@@ -46,9 +46,9 @@ questions:
       ❌ **Faux !** Un mauvais usage d'ARIA peut dégrader l'accessibilité d'un composant déjà correctement sémantique.
 
   - question: |
-      👾 **BOSS FINAL — Vrai ou Faux :**
+      👾 **BOSS FINAL :**
 
-      Ce bouton est correctement désactivé pour tous les utilisateurs uniquement grâce à `aria-disabled="true"` :
+      Un utilisateur clique sur ce bouton. Que se passe-t-il ?
 
       ```html
       <button aria-disabled="true">
@@ -56,4 +56,4 @@ questions:
       </button>
       ```
     answer: |
-      ❌ **Faux !** `aria-disabled="true"` expose l'état aux technologies d'assistance mais n'empêche pas à lui seul l'activation du bouton.
+      **Le clic fonctionne, l'action se déclenche !** `aria-disabled="true"` annonce l'état aux technologies d'assistance mais n'empêche pas à lui seul l'activation du bouton. Il faut bloquer l'action en JavaScript, ou utiliser l'attribut `disabled`.
