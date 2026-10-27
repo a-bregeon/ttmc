@@ -36,9 +36,9 @@ questions:
       ✅ **Vrai !** Il permet de stocker et générer des mots de passe uniques et complexes.
 
   - question: |
-      Vrai ou Faux : Un site utilisant **HTTPS** garantit que le site est fiable et qu'il ne peut pas être frauduleux.
+      Que garantit un site en **HTTPS**, et que ne garantit-il pas ?
     answer: |
-      ❌ **Faux !** HTTPS chiffre la connexion, mais ne garantit pas qu'un site est fiable.
+      **Une connexion chiffrée, mais pas un site honnête !** Le cadenas montre que personne ne peut lire ni modifier les échanges en route. Un site frauduleux peut très bien avoir un certificat HTTPS.
 
   - question: |
       Vrai ou Faux : L'authentification multifacteur (**MFA**) empêche absolument toute compromission d'un compte.

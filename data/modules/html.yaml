@@ -38,9 +38,9 @@ questions:
       ✅ **Vrai !** Les attributs `data-*` peuvent être récupérés en JavaScript via la propriété `dataset`.
 
   - question: |
-      Vrai ou Faux : Plusieurs éléments d'une même page peuvent partager le même attribut `id` sans rendre le document HTML non conforme.
+      Dans un document HTML conforme, combien d'éléments peuvent porter le même `id` ?
     answer: |
-      ❌ **Faux !** La valeur d'un `id` doit être unique dans le document.
+      **Un seul !** La valeur d'un `id` doit être unique dans le document.
 
   - question: |
       À quel moment le script `game.js` est-il exécuté ?
@@ -53,9 +53,9 @@ questions:
       puis exécuté une fois le HTML analysé, juste avant l'événement `DOMContentLoaded`.
 
   - question: |
-      Vrai ou Faux : L'élément HTML natif `<dialog>` peut être ouvert comme une boîte de dialogue modale avec la méthode JavaScript `showModal()`.
+      Quelle méthode JavaScript ouvre l'élément HTML natif `<dialog>` comme une boîte de dialogue modale ?
     answer: |
-      ✅ **Vrai !** `showModal()` permet d'afficher un `<dialog>` dans la couche supérieure en mode modal.
+      **`showModal()` !** Elle affiche le `<dialog>` dans la couche supérieure, en mode modal. La méthode `show()`, elle, l'ouvre sans le rendre modal.
 
   - question: |
       👾 **BOSS FINAL :**

@@ -42,14 +42,14 @@ questions:
       **Le score moyen de chaque équipe !** `GROUP BY` regroupe les joueurs par équipe et `AVG(score)` calcule le score moyen de chacune.
 
   - question: |
-      Vrai ou Faux : Une procédure stockée est un ensemble d'instructions enregistré dans la base de données et pouvant être exécuté à la demande.
+      Comment appelle-t-on un ensemble d'instructions enregistré dans la base de données et exécuté à la demande ?
     answer: |
-      ✅ **Vrai !** Une procédure stockée permet de regrouper une logique exécutée côté base de données.
+      **Une procédure stockée !** Elle permet de regrouper une logique exécutée côté base de données.
 
   - question: |
-      Vrai ou Faux : Le niveau d'isolation **REPEATABLE READ** garantit, dans tous les systèmes de bases de données, qu'une même requête ne pourra jamais retourner de nouvelles lignes ajoutées par une autre transaction.
+      Dans le standard SQL, quel niveau d'isolation empêche les « lectures fantômes », ces nouvelles lignes ajoutées par une autre transaction qui apparaissent quand on répète une même requête ?
     answer: |
-      ❌ **Faux !** Selon le standard SQL, **REPEATABLE READ** peut encore autoriser des « lectures fantômes » : de nouvelles lignes peuvent apparaître lorsqu'une requête est répétée. Certains systèmes offrent toutefois des garanties plus fortes à ce niveau. **SERIALIZABLE** empêche ce phénomène.
+      **SERIALIZABLE !** Selon le standard SQL, **REPEATABLE READ** peut encore autoriser des lectures fantômes. Certains systèmes, comme PostgreSQL, offrent toutefois des garanties plus fortes à ce niveau.
 
   - question: |
       👾 **BOSS FINAL :**

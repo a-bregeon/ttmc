@@ -31,9 +31,9 @@ questions:
       ✅ **Vrai !** Une IA peut inventer une image réaliste. Ce n'est donc pas forcément la preuve d'un événement réel.
 
   - question: |
-      Vrai ou Faux : Augmenter la `temperature` d'un modèle de langage tend généralement à rendre ses réponses plus déterministes.
+      Qu'est-ce que change une `temperature` plus élevée pour un modèle de langage ?
     answer: |
-      ❌ **Faux !** Une température plus élevée tend généralement à augmenter la diversité des sorties.
+      **Des réponses plus variées, moins prévisibles !** Une température plus élevée tend généralement à augmenter la diversité des sorties. Une température basse les rend plus déterministes.
 
   - question: |
       Vrai ou Faux : Si les données utilisées pour entraîner un modèle contiennent des biais, le modèle peut apprendre et reproduire certains de ces biais.
@@ -41,9 +41,9 @@ questions:
       ✅ **Vrai !** Les modèles apprennent à partir de données et celles-ci peuvent contenir des biais ou des déséquilibres.
 
   - question: |
-      Vrai ou Faux : Le `fine-tuning` et le `prompt engineering` désignent exactement la même technique.
+      Quelle différence entre le `fine-tuning` et le `prompt engineering` ?
     answer: |
-      ❌ **Faux !** Le **prompt engineering** consiste à travailler les instructions et le contexte fournis au modèle.
+      **Le fine-tuning modifie le modèle, le prompt engineering seulement ce qu'on lui demande !** Le **fine-tuning** réentraîne un modèle sur des données choisies, ce qui change ses poids. Le **prompt engineering** consiste à travailler les instructions et le contexte fournis au modèle, sans le modifier.
 
   - question: |
       👾 **BOSS FINAL :**
