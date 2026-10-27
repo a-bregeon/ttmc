@@ -46,8 +46,8 @@ questions:
       ✅ **Vrai !** L'édition 2026 se déroule à l'ENSEIRB-MATMECA.
 
   - question: |
-      👾 **BOSS FINAL — Vrai ou Faux :**
+      👾 **BOSS FINAL :**
 
-      L'édition **2026 de BDX I/O se déroule pour la première fois sur deux jours**, les **29 et 30 octobre**.
+      Combien de temps dure un **Hands-on Lab** à BDX I/O ?
     answer: |
-      ✅ **Vrai !** BDX I/O 2026 se déroule sur deux jours, les 29 et 30 octobre.
+      **100 minutes !** C'est le format le plus long de BDX I/O, pour mettre les mains dans le code. Les autres : la conférence (45 minutes) et le Quickie (15 minutes).

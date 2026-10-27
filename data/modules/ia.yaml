@@ -46,8 +46,8 @@ questions:
       ❌ **Faux !** Le **prompt engineering** consiste à travailler les instructions et le contexte fournis au modèle.
 
   - question: |
-      👾 **BOSS FINAL — Vrai ou Faux :**
+      👾 **BOSS FINAL :**
 
-      Une IA chargée de résumer un document peut être détournée par des instructions malveillantes cachées dans ce document, même si l'utilisateur ne lui a jamais demandé de les suivre.
+      Quel est le titre de l'article scientifique de 2017 qui a introduit l'architecture **Transformer**, le « T » de GPT ?
     answer: |
-      ✅ **Vrai !** C'est une **injection de prompt indirecte** : l'IA peut confondre le contenu à analyser avec des consignes à exécuter. Les instructions présentes dans un document doivent être traitées comme des données, pas comme des ordres de l'utilisateur.
+      **« Attention Is All You Need » !** Publié en 2017 par Ashish Vaswani et ses collègues de Google, il décrit le mécanisme d'attention qui permet à chaque mot de tenir compte de tous les autres. Presque tous les grands modèles de langage actuels en descendent.

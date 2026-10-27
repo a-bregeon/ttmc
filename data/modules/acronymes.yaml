@@ -46,8 +46,8 @@ questions:
       ❌ **Faux !** YAML est aujourd'hui développé récursivement comme **YAML Ain't Markup Language**.
 
   - question: |
-      👾 **BOSS FINAL — Vrai ou Faux :**
+      👾 **BOSS FINAL :**
 
-      **GNU** signifie `GNU's Not Unix`.
+      Que signifie **CAPTCHA** ?
     answer: |
-      ✅ **Vrai !** GNU signifie **GNU's Not Unix**.
+      **Completely Automated Public Turing test to tell Computers and Humans Apart !** Soit « test de Turing public et entièrement automatisé pour distinguer les ordinateurs des humains ». OK si tu as cité le test de Turing. 🤖
