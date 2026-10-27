@@ -11,9 +11,13 @@ questions:
       ✅ **Vrai !** Le signe `+` permet ici d'additionner deux nombres : `2 + 3` donne bien `5`. 🧮
 
   - question: |
-      Vrai ou Faux : JavaScript et Java sont deux noms pour le même langage.
+      Vrai ou Faux : Ce code affiche un message dans la console du navigateur :
+
+      ```javascript
+      console.log("Prêt à jouer !");
+      ```
     answer: |
-      ❌ **Faux !** JavaScript et Java sont deux langages différents, malgré leurs noms qui se ressemblent. ☕
+      ✅ **Vrai !** `console.log()` écrit un message dans la console, visible dans les outils de développement du navigateur. 🕹️
 
   - question: |
       Vrai ou Faux : Après ce code, Batman a disparu du tableau :
@@ -26,13 +30,13 @@ questions:
       ✅ **Vrai !** `shift()` retire le premier élément du tableau. Batman est donc parti bouder dans sa Batcave. 🦇
 
   - question: |
-      Vrai ou Faux : Ce code affiche `55` :
+      Vrai ou Faux : Ce code affiche `number` :
 
       ```javascript
-      console.log("5" + 5);
+      console.log(typeof "42");
       ```
     answer: |
-      ✅ **Vrai !** Comme l'une des valeurs est une chaîne de caractères, JavaScript effectue une concaténation et affiche `"55"`.
+      ❌ **Faux !** Il affiche `string`. Avec ses guillemets, `"42"` est une chaîne de caractères, même si elle ne contient que des chiffres. 🔤
 
   - question: |
       Vrai ou Faux : Ce code affiche `true` :
