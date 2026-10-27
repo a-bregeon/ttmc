@@ -33,10 +33,10 @@ questions:
   - question: |
       Que signifie **TTL** ?
     answer: |
-      **Time To Live !** La « durée de vie » d'un paquet réseau ou d'une donnée en cache. OK aussi pour Transistor-Transistor Logic, en électronique.
+      **Time To Live !** La « durée de vie » d'un paquet réseau ou d'une donnée en cache.
 
   - question: |
-      Dans le monde du web, que signifie **ARIA** ?
+      Que signifie **ARIA** ?
     answer: |
       **Accessible Rich Internet Applications !** Des attributs qui décrivent les composants d'une page aux technologies d'assistance, comme les lecteurs d'écran.
 
