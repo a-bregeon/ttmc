@@ -46,8 +46,8 @@ questions:
       ❌ **Faux !** Le MFA renforce la sécurité, mais ne garantit pas une protection absolue.
 
   - question: |
-      👾 **BOSS FINAL — Vrai ou Faux :**
+      👾 **BOSS FINAL :**
 
-      Un pirate qui vole un cookie de session encore valide peut parfois accéder à un compte sans connaître le mot de passe ni saisir le code de double authentification.
+      Que peut faire un pirate qui vole un cookie de session encore valide ?
     answer: |
-      ✅ **Vrai !** Ce cookie peut servir de preuve que l'utilisateur est déjà connecté. La double authentification protège la connexion, mais ne bloque pas forcément l'utilisation d'une session volée.
+      **Utiliser le compte à la place de la victime, sans mot de passe ni code de double authentification !** Ce cookie peut servir de preuve que l'utilisateur est déjà connecté. La double authentification protège la connexion, mais ne bloque pas forcément l'utilisation d'une session volée.

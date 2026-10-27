@@ -50,8 +50,8 @@ questions:
       ✅ **Vrai !** Le HPA peut ajuster automatiquement le nombre de réplicas selon des métriques telles que l'utilisation CPU ou mémoire lorsqu'elles sont configurées et disponibles.
 
   - question: |
-      👾 **BOSS FINAL — Vrai ou Faux :**
+      👾 **BOSS FINAL :**
 
-      Un `Deployment` possède **3 réplicas** et un `PodDisruptionBudget` avec `minAvailable: 3`. Ce budget empêche forcément son contrôleur de supprimer un ancien Pod pendant une mise à jour `RollingUpdate`, même si la stratégie du Deployment autorise `maxUnavailable: 1`.
+      Un `Deployment` possède **3 réplicas** et un `PodDisruptionBudget` avec `minAvailable: 3`. Ce budget bloque-t-il un `kubectl drain` du nœud qui héberge un de ces Pods ? Et une mise à jour `RollingUpdate` du Deployment avec `maxUnavailable: 1` ?
     answer: |
-      ❌ **Faux !** Un `PodDisruptionBudget` encadre les évictions passant par l'**API Eviction**, comme celles d'un drain respectant le budget. Il ne limite pas les suppressions effectuées par le contrôleur du Deployment pendant un rolling update : c'est la stratégie `maxUnavailable` / `maxSurge` qui pilote cette mise à jour. Les Pods indisponibles pendant le rollout comptent toutefois dans le calcul du budget pour les autres évictions.
+      **Le drain est bloqué, le rolling update ne l'est pas !** OK seulement avec les deux bonnes réponses. Un `PodDisruptionBudget` encadre les évictions passant par l'**API Eviction**, comme celles d'un `kubectl drain` : évincer un Pod ferait tomber à 2 Pods disponibles, sous le minimum de 3, donc le drain attend. Le budget ne limite pas les suppressions effectuées par le contrôleur du Deployment pendant un rolling update : c'est la stratégie `maxUnavailable` / `maxSurge` qui pilote cette mise à jour. Les Pods indisponibles pendant le rollout comptent toutefois dans le calcul du budget pour les autres évictions.

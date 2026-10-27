@@ -46,8 +46,8 @@ questions:
       ✅ **Vrai !** Dennis Ritchie a créé le langage C et contribué au développement d'Unix.
 
   - question: |
-      👾 **BOSS FINAL — Vrai ou Faux :**
+      👾 **BOSS FINAL :**
 
-      **Radia Perlman** est parfois surnommée la "Mother of the Internet" grâce notamment à ses travaux sur le Spanning Tree Protocol.
+      Quelle informaticienne est parfois surnommée la « Mother of the Internet », notamment pour avoir conçu le Spanning Tree Protocol ?
     answer: |
-      ✅ **Vrai !** Radia Perlman est notamment connue pour avoir conçu le Spanning Tree Protocol.
+      **Radia Perlman !** Elle est notamment connue pour avoir conçu le Spanning Tree Protocol, qui évite les boucles dans les réseaux Ethernet.
