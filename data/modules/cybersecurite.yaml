@@ -16,21 +16,6 @@ questions:
       ❌ **Faux !** Elles peuvent aussi corriger des problèmes de sécurité et mieux protéger tes appareils.
 
   - question: |
-      Vrai ou Faux : Un site utilisant **HTTPS** garantit que le site est fiable et qu'il ne peut pas être frauduleux.
-    answer: |
-      ❌ **Faux !** HTTPS chiffre la connexion, mais ne garantit pas qu'un site est fiable.
-
-  - question: |
-      Vrai ou Faux : Un gestionnaire de mots de passe permet d'utiliser un mot de passe différent et complexe pour chaque service sans avoir à tous les mémoriser.
-    answer: |
-      ✅ **Vrai !** Il permet de stocker et générer des mots de passe uniques et complexes.
-
-  - question: |
-      Vrai ou Faux : L'authentification multifacteur (**MFA**) empêche absolument toute compromission d'un compte.
-    answer: |
-      ❌ **Faux !** Le MFA renforce la sécurité, mais ne garantit pas une protection absolue.
-
-  - question: |
       Vrai ou Faux : Utiliser le même mot de passe sur tous ses comptes est une bonne idée.
     answer: |
       ❌ **Faux !** Si ce mot de passe est volé, plusieurs comptes peuvent être menacés. Il vaut mieux utiliser un mot de passe différent pour chaque compte.
@@ -44,6 +29,21 @@ questions:
       Vrai ou Faux : Une personne se présente comme le support informatique et demande ton code reçu par SMS. Tu peux le lui donner puisqu’elle connaît ton nom.
     answer: |
       ❌ **Faux !** Connaître ton nom ne prouve pas son identité. Ne partage pas le code et contacte le support par son canal habituel.
+
+  - question: |
+      Vrai ou Faux : Un gestionnaire de mots de passe permet d'utiliser un mot de passe différent et complexe pour chaque service sans avoir à tous les mémoriser.
+    answer: |
+      ✅ **Vrai !** Il permet de stocker et générer des mots de passe uniques et complexes.
+
+  - question: |
+      Vrai ou Faux : Un site utilisant **HTTPS** garantit que le site est fiable et qu'il ne peut pas être frauduleux.
+    answer: |
+      ❌ **Faux !** HTTPS chiffre la connexion, mais ne garantit pas qu'un site est fiable.
+
+  - question: |
+      Vrai ou Faux : L'authentification multifacteur (**MFA**) empêche absolument toute compromission d'un compte.
+    answer: |
+      ❌ **Faux !** Le MFA renforce la sécurité, mais ne garantit pas une protection absolue.
 
   - question: |
       👾 **BOSS FINAL — Vrai ou Faux :**
