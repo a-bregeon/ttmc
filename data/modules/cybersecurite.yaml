@@ -26,28 +26,32 @@ questions:
       ✅ **Vrai !** Une sauvegarde permet de retrouver ses fichiers si les originaux sont perdus ou endommagés.
 
   - question: |
-      Vrai ou Faux : Une personne se présente comme le support informatique et demande ton code reçu par SMS. Tu peux le lui donner puisqu’elle connaît ton nom.
+      Vrai ou Faux : Un site frauduleux peut afficher le cadenas HTTPS dans la barre d'adresse.
     answer: |
-      ❌ **Faux !** Connaître ton nom ne prouve pas son identité. Ne partage pas le code et contacte le support par son canal habituel.
+      ✅ **Vrai !** Les certificats sont gratuits et faciles à obtenir. Le cadenas montre que la connexion est chiffrée, pas que le site est honnête.
 
   - question: |
-      Vrai ou Faux : Un gestionnaire de mots de passe permet d'utiliser un mot de passe différent et complexe pour chaque service sans avoir à tous les mémoriser.
+      Quelle faille contient ce code, et comment la corriger ?
+
+      ```java
+      String query = "SELECT * FROM users WHERE name = '" + name + "'";
+      ```
     answer: |
-      ✅ **Vrai !** Il permet de stocker et générer des mots de passe uniques et complexes.
+      **Une injection SQL !** Si `name` vaut `' OR '1'='1`, la requête renvoie tous les utilisateurs. On la corrige avec une requête paramétrée, qui envoie la valeur à part du texte SQL.
 
   - question: |
-      Que garantit un site en **HTTPS**, et que ne garantit-il pas ?
+      Un JWT est signé avec une clé que seul le serveur connaît. Qui peut lire son contenu ?
     answer: |
-      **Une connexion chiffrée, mais pas un site honnête !** Le cadenas montre que personne ne peut lire ni modifier les échanges en route. Un site frauduleux peut très bien avoir un certificat HTTPS.
+      **N'importe qui !** Le contenu d'un JWT signé est seulement encodé en Base64URL : la signature empêche de le modifier, pas de le lire. Il ne faut donc jamais y mettre de secret.
 
   - question: |
-      Vrai ou Faux : L'authentification multifacteur (**MFA**) empêche absolument toute compromission d'un compte.
+      Ton API répond avec l'en-tête `Access-Control-Allow-Origin: https://monsite.fr`. Un script `curl` lancé depuis un autre serveur peut-il quand même l'appeler ? Pourquoi ?
     answer: |
-      ❌ **Faux !** Le MFA renforce la sécurité, mais ne garantit pas une protection absolue.
+      **Oui !** OK seulement avec le pourquoi : CORS est appliqué par le navigateur, pas par le serveur. Il empêche le JavaScript d'un autre site de lire la réponse, mais `curl` l'ignore. Pour protéger une API, il faut une vraie authentification.
 
   - question: |
       👾 **BOSS FINAL :**
 
-      Que peut faire un pirate qui vole un cookie de session encore valide ?
+      Ton serveur télécharge l'image dont l'utilisateur donne l'URL. Comment s'appelle cette faille, et que peut viser un attaquant ?
     answer: |
-      **Utiliser le compte à la place de la victime, sans mot de passe ni code de double authentification !** Ce cookie peut servir de preuve que l'utilisateur est déjà connecté. La double authentification protège la connexion, mais ne bloque pas forcément l'utilisation d'une session volée.
+      **Une SSRF (Server-Side Request Forgery) !** L'attaquant fait appeler par ton serveur des adresses internes, inaccessibles depuis Internet. Par exemple `http://169.254.169.254/`, l'adresse des métadonnées du cloud, qui peut livrer des identifiants. C'est ainsi qu'a commencé la fuite de données de Capital One en 2019. OK si tu as dit SSRF, ou que le serveur peut appeler le réseau interne.
