@@ -36,9 +36,9 @@ questions:
       **Des réponses plus variées, moins prévisibles !** Une température plus élevée tend généralement à augmenter la diversité des sorties. Une température basse les rend plus déterministes.
 
   - question: |
-      Vrai ou Faux : Si les données utilisées pour entraîner un modèle contiennent des biais, le modèle peut apprendre et reproduire certains de ces biais.
+      Comment s'appelle la technique qui va chercher des documents pertinents et les ajoute au prompt avant que le modèle génère sa réponse ?
     answer: |
-      ✅ **Vrai !** Les modèles apprennent à partir de données et celles-ci peuvent contenir des biais ou des déséquilibres.
+      **Le RAG (Retrieval-Augmented Generation) !** Le modèle répond à partir de documents récupérés au moment de la question, par exemple la documentation de ton entreprise, sans avoir été réentraîné dessus. OK si tu as dit « RAG ».
 
   - question: |
       Quelle différence entre le `fine-tuning` et le `prompt engineering` ?
